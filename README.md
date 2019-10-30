@@ -1,10 +1,13 @@
-This repository contains our solution to the Higgs Boson Machine Learning Challenge held on Kaggle in 2014 ([Higgs Boson Machine Learning Challenge](https://www.kaggle.com/c/higgs-bosonhttps://www.kaggle.com/c/higgs-boson))
-Using simulated data with features characterizing events detected by the [ATLAS](https://atlas.cern/) experiment, the task is to classify events of particle decays, specifically "tau tau decay of a Higgs boson" versus "backgroud".
+This repository contains our solution to the [Higgs Boson Machine Learning Challenge](https://www.kaggle.com/c/higgs-bosonhttps://www.kaggle.com/c/higgs-boson) held on Kaggle in 2014.
+
+The data is simulated data with features characterizing events of particle decays detected by the [ATLAS experiment](https://atlas.cern/).  The task is to classify the events into two classes, specifically "tau tau decay of a Higgs boson" events versus "backgroud" events.
 The ultimate goal is to improve the discovery significance of the experiment. The evaluation metric is the *approximate median significance (AMS)*, a function of a statistical test.
 
 We used tree-based boosting and bagging techniques, specifically XGBOOST and random forest algorithm.
 
 We applied hyperparameters search procedure using the tree Parzen estimator algorithm with cross-validation. Additionnally the threshold used to round probability predictions to one of the two classes was also tuned as a hyperparameter to maximise the AMS.
+
+The CERN data can be downloaded at [this link](http://opendata.cern.ch/record/328).
 
 ## Results
 
@@ -28,3 +31,4 @@ We applied hyperparameters search procedure using the tree Parzen estimator algo
 
 ![CV AMS Curves](/home/jules/dev/reds/higgs-challenge/figures/randomforest/CV AMS Curves.svg)
 *Fig. 2: Random forest AMS scores vs threshold for each of the cross-validation folds used at the best trial.*
+
