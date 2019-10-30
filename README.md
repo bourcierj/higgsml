@@ -26,9 +26,9 @@ The CERN data can be downloaded at [this link](http://opendata.cern.ch/record/32
 | Test (private leaderboard) | 3.4904  | 3.5274        |
 | Public leaderboard         | 3.3889  | 3.4102        |
 
-![CV AMS Curves](/home/jules/dev/reds/higgs-challenge/figures/xgboost/CV AMS Curves.svg)
+![CV AMS Curves](figures/xgboost/CV_AMS_Curves.svg)
 *Fig. 1: XGBOOST AMS scores vs threshold for each of the cross-validation folds used at the best trial (the trial with best mean max of curves).*
 
-![CV AMS Curves](/home/jules/dev/reds/higgs-challenge/figures/randomforest/CV AMS Curves.svg)
+![CV AMS Curves](figures/randomforest/CV_AMS_Curves.svg)
 *Fig. 2: Random forest AMS scores vs threshold for each of the cross-validation folds used at the best trial.*
 
