@@ -1,0 +1,8 @@
+# Requirements
+numpy
+pandas
+scikit-
+xgboost
+hyperopt
+matplotlib
+seaborn
