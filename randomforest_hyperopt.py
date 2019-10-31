@@ -29,8 +29,9 @@ def parse_args():
 PARAMS_SPACE = {
     'n_estimators': hp.choice('n_estimators', range(10, 201)),
     'criterion': hp.choice('criterion', ["gini", "entropy"]),
-    'max_depth': hp.choice('max_depth', range(3, 25)),
+    'max_depth': hp.choice('max_depth', range(3, 15)),
     'min_samples_split': hp.choice('min_samples_split', range(2, 21)),
+    'min_samples_leaf': hp.choice('min_samples_leaf', range(1, 11)),
     'max_features': hp.uniform('max_features', 0.15, 1),
     'n_jobs': -1
 }
@@ -120,4 +121,13 @@ if __name__ == '__main__':
 
 # {'criterion': 'entropy', 'max_depth': 14, 'max_features': 0.3293767532129152,
 #   'min_samples_split': 6, 'n_estimators': 141, 'n_jobs': -1}
-# Time elapsed: 3784.71328663826s
+
+
+# WITH MAX DEPTH UP TO 15 AND 100 TRIALS
+
+# The best hyperparameters are:
+
+# {'criterion': 'gini', 'max_depth': 17, 'max_features': 0.22762843793821438,
+#  'min_samples_leaf': 1, 'min_samples_split': 12, 'n_estimators': 182,
+#  'n_jobs': -1}
+# Time elapsed: 2:57:56

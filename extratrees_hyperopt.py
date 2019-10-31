@@ -88,7 +88,7 @@ if __name__ == '__main__':
             ams_max, th_max = max_ams((ams_scores, thresholds))
             cv_ams.append(ams_max)
             cv_thresholds.append(th_max)
-
+# WITH MAX
         # compute mean metrics over folds
         ams, ams_var = np.mean(cv_ams), np.var(cv_ams)
         threshold, threshold_var = np.mean(cv_thresholds), np.var(cv_thresholds)
@@ -119,13 +119,8 @@ if __name__ == '__main__':
         with open(os.path.join(args.logdir, 'Trials-extratrees.pkl'), 'wb') as file:
             pickle.dump(trials, file, pickle.HIGHEST_PROTOCOL)
 
-# The best hyperparameters are:
 
-# {'bootstrap': False, 'class_weight': 'balanced', 'criterion': 'entropy',
-#   'max_depth': 23, 'max_features': 0.6716967767567084, 'min_samples_leaf': 8,
-#   'min_samples_split': 12, 'n_estimators': 184, 'n_jobs': -1}
-# Time elapsed: 2:01:19
-
+## WITH MAX_DEPTH UP TO 15 ##
 
 # The best hyperparameters are:
 
@@ -134,3 +129,12 @@ if __name__ == '__main__':
 #  'n_estimators': 191, 'n_jobs': -1}
 # Time elapsed: 1:31:46
 
+
+## WITH MAX_DEPTH UP TO 25 ##
+
+# The best hyperparameters are:
+
+# {'bootstrap': False, 'class_weight': 'balanced', 'criterion': 'entropy',
+#   'max_depth': 23, 'max_features': 0.6716967767567084, 'min_samples_leaf': 8,
+#   'min_samples_split': 12, 'n_estimators': 184, 'n_jobs': -1}
+# Time elapsed: 2:01:19

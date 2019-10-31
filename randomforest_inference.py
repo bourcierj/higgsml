@@ -113,4 +113,20 @@ if __name__ == '__main__':
 # Test AMS: 3.527363
 # Leaderboard AMS: 3.410189
 
+
 ## WITH MAX_DEPTH UP TO 25 ##
+
+# Hyperopt best results:
+#         Mean AMS: 3.572076
+#         Var AMS: 0.002461
+#         Mean threshold: 0.816433
+#         Var threshold: 0.000351
+#         Trial: 70
+
+# Training on train set...
+# Done
+
+# Scores with best threshold in CV:
+# Train AMS: 6.459770
+# Test AMS: 3.470038
+# Leaderboard AMS: 3.395389
