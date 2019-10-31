@@ -1,7 +1,7 @@
 # Requirements
 numpy
 pandas
-scikit-
+scikit-learn
 xgboost
 hyperopt
 matplotlib
