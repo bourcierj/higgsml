@@ -38,7 +38,7 @@ def plot_ams_curve(ams_curve, show_max=False, ax=None):
 
     ax.set_xlabel('Decision threshold')
     ax.set_ylabel('AMS score')
-    if lenged is not None:
+    if legend is not None:
         ax.legend(loc='best')
 
 
